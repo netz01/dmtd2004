@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <body>
+<style>
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.nav-items {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #f5f5f5;
+      margin-right: 20px;
+    }
+
+    .nav-items a {
+      text-decoration: none;
+      color: #000;
+      padding: 35px 20px;
+    }
+
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+
+  /* The alert message box */
+.alert {
+  padding: 20px;
+  background-color: #1eac25; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
+
+</style>
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Add font awesome icons -->
+<a href="https://www.facebook.com/DMTD.MK"class="fa fa-facebook"></a>
+<a href="https://www.instagram.com/dmtd2004/" class="fa fa-instagram"></a>
+
+<nav class="nav-items">
+      <a href="index.html">Anasayfa</a>
+      <a href="projeler.html">Projeler</a>
+      <a href="hakkimizda.html">Hakkımızda</a>
+      <a href="iletisim.html">iletişim</a>
+    </nav>
+
+
+<div class="container">
+    <form action="action_page.php">
+  
+      <label for="fname">Isim</label>
+      <input type="text" id="fname" name="firstname" placeholder="Isminiz..">
+  
+      <label for="lname">Soyisminiz</label>
+      <input type="text" id="lname" name="lastname" placeholder="Soyisminiz..">
+  
+      <label for="country">Devlet</label>
+      <select id="country" name="Devlet">
+        <option value="Türkiye">Türkiye</option>
+        <option value="North Macedonia">Kuzey Makedonya</option>
+        <option value="usa">Usa</option>
+        <option value="Azerbeycan">Azerbeycan</option>
+        <option value="Bulgaristan">Bulgaristan</option>
+        <option value="Kosovo">Kosovo</option>
+
+      </select>
+  
+      <label for="subject">Mesaj</label>
+      <textarea id="subject" name="subject" placeholder="Mesajinizi girin..." style="height:200px"></textarea>
+  
+      <input type="submit" value="Gönder">
+      <div class="alert">
+
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  Mesajiniz başarıyla iletilmiştir0.
+</div>  
+    </form>
+  </div>
+    </body>
+</html>
